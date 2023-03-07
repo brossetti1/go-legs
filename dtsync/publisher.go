@@ -9,7 +9,7 @@ import (
 	"sync"
 	"time"
 
-	dt "github.com/filecoin-project/go-data-transfer"
+	dt "github.com/filecoin-project/go-data-transfer/v2"
 	"github.com/filecoin-project/go-legs/announce/gossiptopic"
 	"github.com/filecoin-project/go-legs/p2p/protocol/head"
 	"github.com/hashicorp/go-multierror"

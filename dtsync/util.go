@@ -6,11 +6,11 @@ import (
 	"strings"
 	"time"
 
-	dt "github.com/filecoin-project/go-data-transfer"
-	"github.com/filecoin-project/go-data-transfer/channelmonitor"
-	datatransfer "github.com/filecoin-project/go-data-transfer/impl"
-	dtnetwork "github.com/filecoin-project/go-data-transfer/network"
-	gstransport "github.com/filecoin-project/go-data-transfer/transport/graphsync"
+	dt "github.com/filecoin-project/go-data-transfer/v2"
+	"github.com/filecoin-project/go-data-transfer/v2/channelmonitor"
+	datatransfer "github.com/filecoin-project/go-data-transfer/v2/impl"
+	dtnetwork "github.com/filecoin-project/go-data-transfer/v2/network"
+	gstransport "github.com/filecoin-project/go-data-transfer/v2/transport/graphsync"
 	"github.com/hashicorp/go-multierror"
 	"github.com/ipfs/go-datastore"
 	"github.com/ipfs/go-graphsync"
@@ -32,7 +32,7 @@ func configureDataTransferForLegs(ctx context.Context, dtManager dt.Manager, lsy
 		return err
 	}
 	lsc := legStorageConfiguration{lsys}
-	if err = dtManager.RegisterTransportConfigurer(v, lsc.configureTransport); err != nil {
+	if err = dtManager.RegisterTransportConfigurer(v.Type(), lsc.configureTransport); err != nil {
 		return fmt.Errorf("failed to register datatransfer TransportConfigurer: %w", err)
 	}
 	return nil
@@ -61,7 +61,7 @@ func registerVoucher(dtManager dt.Manager, v *Voucher, allowPeer func(peer.ID) b
 	val := &legsValidator{
 		allowPeer: allowPeer,
 	}
-	err := dtManager.RegisterVoucherType(v, val)
+	err := dtManager.RegisterVoucherType(v.Type(), val)
 	if err != nil {
 		// This can happen if a host is both a publisher and a subscriber.
 		if strings.Contains(err.Error(), "identifier already registered: "+string(v.Type())) {
@@ -73,7 +73,7 @@ func registerVoucher(dtManager dt.Manager, v *Voucher, allowPeer func(peer.ID) b
 		return fmt.Errorf("failed to register legs validator voucher type: %w", err)
 	}
 	lvr := &VoucherResult{}
-	if err = dtManager.RegisterVoucherResultType(lvr); err != nil {
+	if err = dtManager.RegisterVoucherType(lvr.Type()); err != nil {
 		return fmt.Errorf("failed to register legs voucher result type: %w", err)
 	}
 	return nil

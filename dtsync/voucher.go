@@ -3,7 +3,7 @@ package dtsync
 import (
 	"errors"
 
-	datatransfer "github.com/filecoin-project/go-data-transfer"
+	datatransfer "github.com/filecoin-project/go-data-transfer/v2"
 	"github.com/ipfs/go-cid"
 	"github.com/ipld/go-ipld-prime"
 	"github.com/libp2p/go-libp2p/core/peer"
@@ -15,7 +15,7 @@ import (
 var (
 	_ datatransfer.RequestValidator = (*legsValidator)(nil)
 
-	_ datatransfer.Registerable = (*Voucher)(nil)
+	_ datatransfer.Channel.BaseCid = (*Voucher)(nil)
 	_ cborgen.CBORMarshaler     = (*Voucher)(nil)
 	_ cborgen.CBORUnmarshaler   = (*Voucher)(nil)
 
