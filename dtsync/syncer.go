@@ -6,7 +6,7 @@ import (
 	"io"
 	"time"
 
-	"github.com/filecoin-project/go-legs/p2p/protocol/head"
+	"github.com/brossetti1/go-legs/p2p/protocol/head"
 	"github.com/ipfs/go-cid"
 	"github.com/ipld/go-ipld-prime"
 	"github.com/ipld/go-ipld-prime/datamodel"

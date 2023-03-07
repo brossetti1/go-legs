@@ -9,9 +9,9 @@ import (
 	"sync"
 	"time"
 
+	"github.com/brossetti1/go-legs/announce/gossiptopic"
+	"github.com/brossetti1/go-legs/p2p/protocol/head"
 	dt "github.com/filecoin-project/go-data-transfer/v2"
-	"github.com/filecoin-project/go-legs/announce/gossiptopic"
-	"github.com/filecoin-project/go-legs/p2p/protocol/head"
 	"github.com/hashicorp/go-multierror"
 	"github.com/ipfs/go-cid"
 	"github.com/ipfs/go-datastore"

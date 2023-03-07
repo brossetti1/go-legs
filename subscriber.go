@@ -7,9 +7,9 @@ import (
 	"sync"
 	"time"
 
-	"github.com/filecoin-project/go-legs/announce"
-	"github.com/filecoin-project/go-legs/dtsync"
-	"github.com/filecoin-project/go-legs/httpsync"
+	"github.com/brossetti1/go-legs/announce"
+	"github.com/brossetti1/go-legs/dtsync"
+	"github.com/brossetti1/go-legs/httpsync"
 	"github.com/hashicorp/go-multierror"
 	"github.com/ipfs/go-cid"
 	"github.com/ipfs/go-datastore"

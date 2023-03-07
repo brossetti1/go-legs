@@ -11,7 +11,7 @@ import (
 	"path"
 	"time"
 
-	maurl "github.com/filecoin-project/go-legs/httpsync/multiaddr"
+	maurl "github.com/brossetti1/go-legs/httpsync/multiaddr"
 	"github.com/ipfs/go-cid"
 	logging "github.com/ipfs/go-log/v2"
 	"github.com/ipld/go-ipld-prime"

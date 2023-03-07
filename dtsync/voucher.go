@@ -15,9 +15,9 @@ import (
 var (
 	_ datatransfer.RequestValidator = (*legsValidator)(nil)
 
-	_ datatransfer.Channel.BaseCid = (*Voucher)(nil)
-	_ cborgen.CBORMarshaler     = (*Voucher)(nil)
-	_ cborgen.CBORUnmarshaler   = (*Voucher)(nil)
+	_ datatransfer.Channel    = (*Voucher)(nil)
+	_ cborgen.CBORMarshaler   = (*Voucher)(nil)
+	_ cborgen.CBORUnmarshaler = (*Voucher)(nil)
 
 	_ datatransfer.Registerable = (*VoucherResult)(nil)
 	_ cborgen.CBORMarshaler     = (*VoucherResult)(nil)

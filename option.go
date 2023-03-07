@@ -6,8 +6,8 @@ import (
 	"sync"
 	"time"
 
+	"github.com/brossetti1/go-legs/announce"
 	dt "github.com/filecoin-project/go-data-transfer/v2"
-	"github.com/filecoin-project/go-legs/announce"
 	"github.com/ipfs/go-cid"
 	"github.com/ipfs/go-graphsync"
 	"github.com/ipld/go-ipld-prime/traversal/selector"

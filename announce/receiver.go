@@ -7,8 +7,8 @@ import (
 	"fmt"
 	"sync"
 
-	"github.com/filecoin-project/go-legs/announce/gossiptopic"
-	"github.com/filecoin-project/go-legs/mautil"
+	"github.com/brossetti1/go-legs/announce/gossiptopic"
+	"github.com/brossetti1/go-legs/mautil"
 	"github.com/ipfs/go-cid"
 	logging "github.com/ipfs/go-log/v2"
 	pubsub "github.com/libp2p/go-libp2p-pubsub"

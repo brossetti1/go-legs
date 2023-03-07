@@ -9,8 +9,8 @@ import (
 	"path"
 	"testing"
 
-	"github.com/filecoin-project/go-legs/httpsync"
-	lma "github.com/filecoin-project/go-legs/httpsync/multiaddr"
+	"github.com/brossetti1/go-legs/httpsync"
+	lma "github.com/brossetti1/go-legs/httpsync/multiaddr"
 	"github.com/ipfs/go-cid"
 	"github.com/ipld/go-ipld-prime"
 	_ "github.com/ipld/go-ipld-prime/codec/dagjson"

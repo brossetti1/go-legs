@@ -6,8 +6,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/filecoin-project/go-legs/p2p/protocol/head"
-	"github.com/filecoin-project/go-legs/test"
+	"github.com/brossetti1/go-legs/p2p/protocol/head"
+	"github.com/brossetti1/go-legs/test"
 	"github.com/ipfs/go-cid"
 	"github.com/ipfs/go-datastore"
 	dssync "github.com/ipfs/go-datastore/sync"

@@ -8,8 +8,8 @@ import (
 	"log"
 	"time"
 
-	"github.com/filecoin-project/go-legs"
-	"github.com/filecoin-project/go-legs/dtsync"
+	"github.com/brossetti1/go-legs"
+	"github.com/brossetti1/go-legs/dtsync"
 	"github.com/ipfs/go-cid"
 	"github.com/ipfs/go-datastore"
 	dssync "github.com/ipfs/go-datastore/sync"

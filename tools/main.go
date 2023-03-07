@@ -7,7 +7,7 @@ import (
 	"os"
 	"path"
 
-	"github.com/filecoin-project/go-legs/dtsync"
+	"github.com/brossetti1/go-legs/dtsync"
 	cborgen "github.com/whyrusleeping/cbor-gen"
 )
 

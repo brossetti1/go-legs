@@ -3,7 +3,7 @@ package mautil_test
 import (
 	"testing"
 
-	"github.com/filecoin-project/go-legs/mautil"
+	"github.com/brossetti1/go-legs/mautil"
 	"github.com/multiformats/go-multiaddr"
 	"github.com/stretchr/testify/require"
 )

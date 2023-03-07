@@ -7,9 +7,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/filecoin-project/go-legs"
-	"github.com/filecoin-project/go-legs/httpsync"
-	"github.com/filecoin-project/go-legs/test"
+	"github.com/brossetti1/go-legs"
+	"github.com/brossetti1/go-legs/httpsync"
+	"github.com/brossetti1/go-legs/test"
 	"github.com/ipfs/go-cid"
 	"github.com/ipfs/go-datastore"
 	dssync "github.com/ipfs/go-datastore/sync"

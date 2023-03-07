@@ -1,4 +1,4 @@
-module github.com/filecoin-project/go-legs
+module github.com/brossetti1/go-legs
 
 go 1.18
 

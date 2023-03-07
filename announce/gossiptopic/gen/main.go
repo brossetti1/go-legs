@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/filecoin-project/go-legs/announce/gossiptopic"
+	"github.com/brossetti1/go-legs/announce/gossiptopic"
 	cbg "github.com/whyrusleeping/cbor-gen"
 )
 
